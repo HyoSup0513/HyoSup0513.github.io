@@ -70,7 +70,7 @@ private:
 
 * Equality of two lists O(m), a == b
 
-is the length of the shorter of the two lists.
+m is the length of the shorter of the two lists.
 
 ```
 bool operator== (const dlist& a, const dlist& b) {
