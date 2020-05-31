@@ -22,6 +22,7 @@ title: About
 * Data Structures, Algorithm
 * Computer Networking
 * Databases(Mysql)
+* Operating System
 
 ## ETC
 * Game Programming
