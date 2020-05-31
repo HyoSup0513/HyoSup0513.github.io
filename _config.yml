@@ -1,7 +1,7 @@
 # Setup
 title:               Maratom's tech Blog
 tagline:             'For better'
-description:         "![icon](/public/icon.png)"
+description:         ![icon](/public/icon.png)
 url:                 "https://hyosup0513.github.io/"
 baseurl:             ''
 paginate:            5
