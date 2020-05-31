@@ -68,7 +68,7 @@ private:
 };
 ```
 
-1. Equality of two lists O(m), a == b
+* Equality of two lists O(m), a == b
 
 is the length of the shorter of the two lists.
 
@@ -94,7 +94,7 @@ bool operator== (const dlist& a, const dlist& b) {
 };
 ```
 
-2. List concatenation O(n), a + b
+* List concatenation O(n), a + b
 
 Returns a new list consisting of all the elements of a, followed by all the elements of b
 
@@ -118,7 +118,7 @@ dlist operator+ (const dlist& a, const dlist& b) {
 };
 ```
 
-3. Reverse list O(n)
+* Reverse list O(n)
 
 Returns a new list that is the reversal of l; that is, a new list
 containing the same elements as l but in the reverse order.
@@ -139,7 +139,7 @@ dlist reverse(const dlist& l) {
 
 - ### cpp file
 
-4. at O(n)
+* at O(n)
 
 Returns the node at a particular index (0 is the head)
 
@@ -160,7 +160,7 @@ dlist::node* dlist::at(int n) const {
 };
 ```
 
-5. Insert the node O(1)
+* Insert the node O(1)
 
 Insert a new value, after an existing one.
 
@@ -211,7 +211,7 @@ void dlist::insert(node* previous, int value)
 }
 ```
 
-6. Delete the node O(1)
+* Delete the node O(1)
 
 ```
 void dlist::remove(node* which) {
@@ -236,7 +236,7 @@ void dlist::remove(node* which) {
 }
 ```
 
-7. Push back the node O(1)
+* Push back the node O(1)
 
 Add a new element to the end of the list
 
@@ -268,7 +268,7 @@ void dlist::push_back(int value) {
 }
 ```
 
-8. Push front the node O(1)
+* Push front the node O(1)
 
 Add a new element to the beginning of the list
 
@@ -300,7 +300,7 @@ void dlist::push_front(int value) {
 }
 ```
 
-9. Pop front the node O(1)
+* Pop front the node O(1)
 
 Remove the first element of the list
 
@@ -326,7 +326,7 @@ void dlist::pop_front() {
 }
 ```
 
-10. Pop back O(1)
+* Pop back O(1)
 
 Remove the last element of the list
 
@@ -349,7 +349,7 @@ void dlist::pop_back() {
 }
 ```
 
-11. Get the size of the list
+* Get the size of the list
 
 Should run in O(n) time at the worst
 
@@ -369,7 +369,7 @@ int dlist::size() const {
 }
 ```
 
-12. Check empty O(1)
+* Check empty O(1)
 
 ```
 bool dlist::empty() const{
