@@ -1,7 +1,7 @@
 # Setup
 title:               Maratom's tech Blog
 tagline:             'For better'
-description:         <a href="https://hyosup0513.github.io//about/"><img src="/public/Maratom.jpg" width="150" height="150"> <p style="text-align: center"> Maratom</a></p> <a href="https://github.com/HyoSup0513"><img src="/public/giticon.png" width="60" height="60"></a> GitHub
+description:         <a href="https://hyosup0513.github.io//about/"><img src="/public/Maratom.jpg" width="150" height="150"> <p style=text-align: center> Maratom</a></p> <a href="https://github.com/HyoSup0513"><img src="/public/giticon.png" width="60" height="60"></a> GitHub
 url:                 "https://hyosup0513.github.io/"
 baseurl:             ''
 paginate:            5
