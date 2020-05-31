@@ -65,7 +65,8 @@ ArrayList *createList(int count) {
 			pReturn->currentCount = 0;
 			pReturn->pData = (ArrayListNode*)malloc(sizeof(ArrayListNode) * count);
 
-			// pReturn->pData 가 가리키는 메모리를 sizeof(ArrayListNode) * count 바이트만큼 0으로 설정
+			// pReturn->pData 가 가리키는 메모리를 
+      // sizeof(ArrayListNode) * count 바이트만큼 0으로 설정
 			memset(pReturn->pData, 0, sizeof(ArrayListNode) * count);
 
 			return pReturn;
