@@ -1,6 +1,6 @@
 # Setup
-title:               Maratom's tech Blog
-tagline:             'For better'
+title:               Maratom's Blog
+tagline:             '  For fun, For better'
 description:         <a href="https://hyosup0513.github.io//about/"><img src="/public/Maratom.jpg" width="150" height="150">   Maratom</a> <a href="https://github.com/HyoSup0513"><img src="/public/giticon.png" width="60" height="60"> GitHub</a>
 url:                 "https://hyosup0513.github.io/"
 baseurl:             ''
