@@ -3,16 +3,17 @@ layout: page
 title: Categories
 ---
 
-<ul class="posts-list">
-  {% assign category = page.category | default: page.title %} {% for post in
-  site.categories[category] %}
-  <li>
-    <h3>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-      <small>{{ post.date | date_to_string }}</small>
-    </h3>
-  </li>
-  {% endfor %}
-</ul>
+<header class="site-category">
+  <ul>
+    {% assign pages_list = site.pages %} {% for node in pages_list %} {% if
+    node.title != null %} {% if node.layout == "category" %}
+    <li>
+      <a
+        class="category-link {% if page.url == node.url %} active{% endif %}"
+        href="{{ site.baseurl }}{{ node.url }}"
+        >{{ node.title }}</a
+      >
+    </li>
+    {% endif %} {% endif %} {% endfor %}
+  </ul>
+</header>
