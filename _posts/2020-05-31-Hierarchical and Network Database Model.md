@@ -11,7 +11,7 @@ categories: [Database]
 
 ---
 
-![DB1](/public/images/db1)
+![DB1](/public/images/db1.PNG)
 
 - 뒤집힌 트리 구조 (Reversed Tree-like structure)
 
@@ -57,7 +57,7 @@ categories: [Database]
 
 Network DB는 Hierarchical DB의 문제를 해결하기 위해서 개발되었다.
 
-![DB2](/public/images/db2)
+![DB2](/public/images/db2.PNG)
 
 ## Network DB, 네트워크 데이터베이스의 특징
 
@@ -83,3 +83,5 @@ Network DB는 Hierarchical DB의 문제를 해결하기 위해서 개발되었�
 ## Conclusion 결론
 
 대규모 데이터를 다루기 위해서는 계층형 & 네트워크 데이터베이스 모두 알맞지 않다. 그래서 등장한것이 관계형 데이터베이스 모델 (Relational Database Model) 이다.
+
+참고 서적: 파워 오브 데이터베이스, 송현호,황규용 Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design, 3rd Edition, 마이클 J. 헤르난데즈
