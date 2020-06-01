@@ -54,13 +54,13 @@ categories: [Database]
 - 중복 데이터(Redundant data) 와 관련된 문제가 발생한다.
 
 # Network DB Model
-
+---
 Network DB는 Hierarchical DB의 문제를 해결하기 위해서 개발되었다.
 
 ![DB2](/public/images/db2.PNG)
 
 ## Network DB, 네트워크 데이터베이스의 특징
-
+---
 - 노드(Node) 와 집합구조(Set Structure) 로 표현된다.
   - 노드는 레코드의 모음, 집합 구조는 테이터베이스 간의 관계를 표현한다.
   - 한 쌍의 노드에서 하나를 owner, 또 하나는 member로 표현한다.
@@ -81,7 +81,7 @@ Network DB는 Hierarchical DB의 문제를 해결하기 위해서 개발되었�
     - 집합 구조를 변경하기 위해서 모든 어플리케이션을 수정해야 한다.
 
 ## Conclusion 결론
-
+---
 대규모 데이터를 다루기 위해서는 계층형 & 네트워크 데이터베이스 모두 알맞지 않다. 그래서 등장한것이 관계형 데이터베이스 모델 (Relational Database Model) 이다.
 
 참고 서적: 파워 오브 데이터베이스, 송현호,황규용 Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design, 3rd Edition, 마이클 J. 헤르난데즈
