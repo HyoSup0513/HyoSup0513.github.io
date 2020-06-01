@@ -20,7 +20,7 @@ categories: [Data Structure]
 - Peek - 스택의 Top에 있는 자료를 반환한다. (제거 x)
 - isEmpty - 스택이 비어있는지 확인한다.
 
-![stackimg1](https://github.com/HyoSup0513/hyosup0513.github.io/blob/master/public/images/stack1.PNG)
+![stackimg1](/public/images/stack1.PNG)
 
 ## 배열 스택으로 구현한다면?
 
