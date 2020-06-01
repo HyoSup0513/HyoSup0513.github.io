@@ -30,6 +30,8 @@ categories: [Data Structure]
 
 ## Implementation 배열 스택 구현
 
+Array로 구현하기 때문에 노드 사이의 Link는 필요 없고 단순히 Data만 저장한다.
+노드로 Data를 감싸 동시에 여러개의 Data를 저장할 수 있다.
 ```
 #include <stdio.h>
 #include <string.h>
@@ -40,6 +42,8 @@ typedef struct ArrayStackNodeType {
 }ArrayStackNode;
 ```
 
+maxcount 로 최대로 저장할 수 있는 원소의 개수를 정한다.
+스택의 크기는 배열 pData의 원소의 개수와 같다.
 ```
 typedef struct ArrayStackType {
 	int maxcount; // Maxium number of data.
