@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [c++] Doubly Linked List Implementation 이중 연결 리스트 구현
+title: c++ Doubly Linked List Implementation 이중 연결 리스트 구현
 comments: true
 categories: [Data Structure]
 ---
