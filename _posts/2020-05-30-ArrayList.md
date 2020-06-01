@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Array List (배열 리스트)
+title: Array List Implementation 배열 리스트 구현
 comments: true
 categories: [Data Structure]
 ---
