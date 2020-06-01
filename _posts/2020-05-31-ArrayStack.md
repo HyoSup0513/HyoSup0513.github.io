@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Array Stack (배열 스택)
+title: Array Stack Implementation 배열 스택 
 comments: true
 categories: [Data Structure]
 ---
