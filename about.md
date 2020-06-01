@@ -2,9 +2,11 @@
 layout: page
 title: About
 ---
+## 공부 블로그 Study Blog
+
 ## Current State
 * I'm majoring in computer science at California University. 
-* 현재 캘리포니아 대학의 컴퓨터 공학과에 재학중입니다.
+* 현재 컴퓨터 공학과에 재학중입니다.
 
 ## Author
 * Name: HyoSup Cho
@@ -13,19 +15,11 @@ title: About
 * Email: ysyt2004@gmail.com
 
 ## Programming Languages that I've used
-* C,C++ For Data Structure
+* C,C++
 * Python
 * Java
-* Javascript For Algorithm Visualization
-
-## Computer Science
-* Data Structures, Algorithm
-* Computer Networking
-* Databases(Mysql)
-* Operating System
+* Javascript
 
 ## ETC
 * Game Programming
   * Unity c#
-* Linux
-  * Ubuntu
