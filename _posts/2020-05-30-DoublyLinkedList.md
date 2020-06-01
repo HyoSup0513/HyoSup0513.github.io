@@ -20,7 +20,7 @@ categories: [Data Structure]
   - 따라서 이전 노드로의 접근이 한번에 가능하다.
 - 각각의 노드에 추가적인 연결 정보를 저장하기 때문에 메모리 공간을 더 많이 사용하며 구현이 더 복잡하다.
 
-![screen](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
+![screen](https://github.com/HyoSup0513/hyosup0513.github.io/blob/master/public/images/DDL1.PNG)
 
 ## Structure
 
