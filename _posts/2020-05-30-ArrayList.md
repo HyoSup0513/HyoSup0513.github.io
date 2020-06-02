@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Array List (배열 리스트)
+title: C Array List Implementation 배열 리스트 구현
 comments: true
 categories: [Data Structure]
 ---
@@ -179,3 +179,5 @@ int main() {
 	return 0;
 }
 ```
+
+[GitHub](https://github.com/HyoSup0513/study/tree/master/Datastructure/Array%20List)
