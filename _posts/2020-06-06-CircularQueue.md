@@ -2,7 +2,7 @@
 layout: post
 title: Circular Queue 원형 큐
 comments: true
-categories: [Database]
+categories: [Data Structure]
 ---
 
 # Array Circular Queue 배열 원형 큐
@@ -15,7 +15,7 @@ categories: [Database]
   - Circular Queue is an efficient way to do this.
 
 ## ![CQ1](/public/images/CQ2.PNG)
-
+---
 ## Characteristic of Circular Queue
 
 - Connect the front and rear of the array.
@@ -23,7 +23,7 @@ categories: [Database]
   - rear = (rear + 1) % array size
 
 ![CQ2](/public/images/CQ1.PNG)
-
+---
 # Implementation
 
 [Github](https://github.com/HyoSup0513/study/blob/master/Datastructure/Queue/CircularQueue.c)
