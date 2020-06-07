@@ -26,7 +26,7 @@ But this process is not necessary in Circular Queue, because circular queue conn
   - To connect the front and rear, use 'mod' operator to move the rear node.
   - rear = (rear + 1) % array size
 
-![CQ2](/public/images/CQ1.PNG
+![CQ2](/public/images/CQ1.PNG)
 A is removed from index 0 by Dequeue(A), and then Front is changed to B in index 1.
 Then, Enqueue(E) inserts E into index 0 with empty node, and E becomes the new Rear.
 
