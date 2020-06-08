@@ -1,380 +1,66 @@
 ---
 layout: post
-title: C++ Doubly Linked List Implementation 이중 연결 리스트 구현
+title: Doubly Linked List Implementation 이중 연결 리스트 구현
 comments: true
 categories: [Data Structure]
 ---
 
 # Doubly Linked List 이중 연결 리스트
 
-## 리스트란?
+## What is Doubly Linked List ?
 
-- 선형 (Sequential) 구조
-- 리스트는 자료를 순서대로 저장하는 자료구조이다.
-- 리스트는 한 줄로 데이터를 저장한다.
+In Singly Linked List, connections between nodes are one-way. However, Doubly Linked List has two-way connections between nodes. Each node has a connection to the previous node as well as a connection to the next node. That is why the Doubly Linked List is accessible to both the previous and the next nodes.
 
-## 이중 연결 리스트의 특징
+#### Structure of DDL's Node
 
-- 노드 사이의 연결이 양뱡향이다.
-  - 각 노드는 다음 노드뿐만 아니라 이전 노드에 대한 링크를 추가로 가지고 있다.
-  - 따라서 이전 노드로의 접근이 한번에 가능하다.
-- 각각의 노드에 추가적인 연결 정보를 저장하기 때문에 메모리 공간을 더 많이 사용하며 구현이 더 복잡하다.
+![screen](/public/images/DDL2.PNG)
 
-![screen](/public/images/DDL1.PNG)
+#### Structure of DDL
 
-## Implementation DDL 구현
+![screen](/public/images/DDL3.PNG)
 
-- ### header file
+Because the first node has no previous node, the link to the previous node is NULL. Also, because the last node has no next node, the link to the next node is NULL.
 
-```
-#pragma once
+---
 
-class dlist {
+## Advantages of DDL
 
-public:
-	// Constructor
-    dlist() { }
+- Both previous and next accesses are possible.
+- You can quickly insert a new node before a given node.
+- Deletion is efficient when the pointer of a node to be deleted is given.
+- It is fast to explore nodes.
+  - The Singly Linked List sometimes requires all nodes to be expored when searching for a particular node.
 
-    struct node {
-        int value;
-        node* next;
-        node* prev;
-    };
+---
 
-    node* head() const { return _head; }
-    node* tail() const { return _tail; }
+## Disadvantages of DDL
 
-    node* at(int n) const;
+- All nodes require additional space for the previous pointer.
+- More memory is needed for previous pointer.
+- All operations require a previous pointer.
+- You have to take care of the previous pointer as well as the next pointer.
 
-    void insert(node* previous, int value);
+---
 
-    void remove(node* which);
+## When creating a new node
 
-    void push_back(int value);
+- When adding new data in the DDL, you must create a new node.
+- The link between the previous and next node should be connected to the link of the new node.
+- Finally, you need to reassign the link of the existing node.
 
-    void push_front(int value);
+![screen](/public/images/DDL4.PNG)
 
-    void pop_front();
+---
 
-    void pop_back();
+## When removing an existing node
 
-    int size() const;
+- Find the position of the previous node you want to remove and reassign the 'link of the prev node' to the 'next node' of the 'node you want to remove'.
+- Free the memory of the node you want to delete.
 
-    bool empty() const;
+![screen](/public/images/DDL5.PNG)
 
-private:
-    node* _head = nullptr;
-    node* _tail = nullptr;
-};
-```
+---
 
-* Equality of two lists O(m), a == b
-
-m is the length of the shorter of the two lists.
-
-```
-bool operator== (const dlist& a, const dlist& b) {
-    dlist::node* tempA = a.head();
-    dlist::node* tempB = b.head();
-
-    if (a.size() != b.size())
-        return false;
-    else {
-        while (tempA != nullptr)
-        {
-            if (tempA->value != tempB->value)
-                return false;
-            else {
-                tempA = tempA->next;
-                tempB = tempB->next;
-            }
-        }
-        return true;
-    }
-};
-```
-
-* List concatenation O(n), a + b
-
-Returns a new list consisting of all the elements of a, followed by all the elements of b
-
-```
-dlist operator+ (const dlist& a, const dlist& b) {
-    dlist::node* tempB = b.head();
-    dlist::node* tempA = a.head();
-    dlist c;
-    while (tempA != nullptr)
-    {
-        c.push_back(tempA->value);
-        tempA = tempA->next;
-    }
-    while (tempB != nullptr)
-    {
-        c.push_back(tempB->value);
-        tempB = tempB->next;
-    }
-
-    return c;
-};
-```
-
-* Reverse list O(n)
-
-Returns a new list that is the reversal of l; that is, a new list
-containing the same elements as l but in the reverse order.
-
-```
-dlist reverse(const dlist& l) {
-    dlist::node* tempA = l.tail();
-    dlist c;
-    while (tempA != nullptr)
-    {
-        c.push_back(tempA->value);
-        tempA = tempA->prev;
-    }
-
-    return c;
-};
-```
-
-- ### cpp file
-
-* at O(n)
-
-Returns the node at a particular index (0 is the head)
-
-```
-dlist::node* dlist::at(int n) const {
-	if (n >= size())
-		return nullptr;
-	else if (n < 0)
-		return head();
-	else {
-		node* current = head();
-
-		for (int i = 0; i < n; i++) {
-			current = current->next;
-		}
-	}
-
-};
-```
-
-* Insert the node O(1)
-
-Insert a new value, after an existing one.
-
-```
-void dlist::insert(node* previous, int value)
-{
-	if (previous == nullptr && _head == nullptr && _tail == nullptr) {
-
-		node* newNode = new node;
-		newNode->value = value;
-
-		_head = newNode;
-		_tail = _head;
-		_head->prev = nullptr;
-		_head->next = nullptr;
-
-	}
-	else if (_head == _tail && size() == 1) {
-		node* newNode = new node;
-		newNode->value = value;
-		_head->next = newNode;
-		_tail = newNode;
-		_tail->next = nullptr;
-		_tail->prev = _head;
-	}
-	else if (previous != _head && previous != _tail && size() == 2) {
-		node* newNode = new node;
-		newNode->value = value;
-		_tail->next = newNode;
-		_tail = newNode;
-		_tail->next = nullptr;
-	}
-	else if (previous == _tail && previous != _head) {
-		push_back(value);
-	}
-
-	else {
-		node* newNode = new node;
-		newNode->value = value;
-		node* storenode = new node;
-
-		storenode = previous->next;
-		previous->next = newNode;
-		storenode->prev = previous->next;
-		newNode->next = storenode;
-		newNode->prev = previous;
-	}
-}
-```
-
-* Delete the node O(1)
-
-```
-void dlist::remove(node* which) {
-	node* temp = which;
-	if (which == nullptr) {
-		return;
-	}
-
-	else if (which != nullptr) {
-
-		if (which == _head) {
-			node* newNode = new node;
-			newNode->value = which->value;
-			_head = which->next;
-			_head->prev = nullptr;
-		}
-
-		else {
-			which = which->next;
-		}
-	}
-}
-```
-
-* Push back the node O(1)
-
-Add a new element to the end of the list
-
-```
-void dlist::push_back(int value) {
-
-	if (_head == nullptr || _tail == nullptr) {
-		node* newNode = new node;
-		newNode->value = value;
-
-		_head = newNode;
-		_tail = _head;
-		_head->prev = nullptr;
-		_head->next = nullptr;
-		_head = _tail;
-	}
-	else {
-		node* newNode = new node;
-		node* storeNode = new node;
-		newNode->value = value;
-
-		storeNode = _tail;
-		_tail = newNode;
-		_tail->prev = storeNode;
-		_tail->next = nullptr;
-		if (storeNode != nullptr)
-			storeNode->next = _tail;
-	}
-}
-```
-
-* Push front the node O(1)
-
-Add a new element to the beginning of the list
-
-```
-void dlist::push_front(int value) {
-
-	if (_head == nullptr || _tail == nullptr) {
-		node* newNode = new node;
-		newNode->value = value;
-
-		_head = newNode;
-		_tail = _head;
-		_head->prev = nullptr;
-		_head->next = nullptr;
-	}
-
-	else {
-		node* newNode = new node;
-		node* storeNode = new node;
-		newNode->value = value;
-
-		storeNode = _head;
-		_head = newNode;
-		_head->next = storeNode;
-		_head->prev = nullptr;
-		if (storeNode != nullptr)
-			storeNode->prev = _head;
-	}
-}
-```
-
-* Pop front the node O(1)
-
-Remove the first element of the list
-
-```
-void dlist::pop_front() {
-
-	if (_head == nullptr || _tail == nullptr) {
-		return;
-	}
-	else if (size() == 1) {
-		_head = nullptr;
-		_tail = nullptr;
-	}
-	else {
-		node* newNode = new node;
-		newNode = _head->next->next;
-
-		_head = _head->next;
-		_head->prev = nullptr;
-
-	}
-
-}
-```
-
-* Pop back O(1)
-
-Remove the last element of the list
-
-```
-void dlist::pop_back() {
-
-	if (_head == nullptr || _tail == nullptr) {
-		return;
-	}
-	else if (size() == 1) {
-		_head = nullptr;
-		_tail = nullptr;
-	}
-	else {
-
-		_tail = _tail->prev;
-		_tail->next = nullptr;
-
-	}
-}
-```
-
-* Get the size of the list
-
-Should run in O(n) time at the worst
-
-```
-int dlist::size() const {
-	int listsize = 0;
-
-	node* current = head();
-	if (current != nullptr) {
-
-		while (current != nullptr) {
-			listsize++;
-			current = current->next;
-		}
-	}
-	return listsize;
-}
-```
-
-* Check empty O(1)
-
-```
-bool dlist::empty() const{
-	return head() == tail();
-}
-```
+## Implementation
 
 [Github Link](https://github.com/HyoSup0513/study/tree/master/Datastructure/Doubly%20Linked%20List)
