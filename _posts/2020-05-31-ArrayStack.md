@@ -54,14 +54,14 @@ categories: [Data Structure]
 #### How the stack works
 
 ![stackimg2](/public/images/astack1.PNG)
-
+---
 ## When inserting new data
 
 - As new data is inserted, the top's position index increases by 1.
 - Make sure the array is full or not.
 
   ![stackimg3](/public/images/astack3.PNG)
-
+---
 ## When removing existing data
 
 - When data is removed, the data in the top is removed and the node below the existing data becomes the top.
@@ -69,7 +69,7 @@ categories: [Data Structure]
 - Make sure if there is any data that can be removed.
 
   ![stackimg4](/public/images/astack4.PNG)
-
+---
 ## Implementation
 
 [Github](https://github.com/HyoSup0513/study/blob/master/Datastructure/Stack/Array%20Stack.c)
