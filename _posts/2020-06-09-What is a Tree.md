@@ -32,7 +32,7 @@ Node that are distinguished by the relationship between nodes in the tree.
 - Parent node - node connected directly above the child node
 - Child node - node connected to the bottom of a node
 - Ancestor node - all nodes in the path from the parent node to the root node
-- Descendent node - all child nodes associated with one node
+- Descendant node - all child nodes associated with one node
 - Sibling node - node with the same parent node
 
 ![CQ2](/public/images/tree2.PNG)
