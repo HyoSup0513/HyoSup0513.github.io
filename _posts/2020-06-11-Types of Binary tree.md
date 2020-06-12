@@ -26,7 +26,7 @@ categories: [Data Structure]
 2. All nodes are full, so the height from the leaf node to the root node is the same.
 3. Number of nodes n = 2^height - 1
 
-![CQ2](/public/images/2tree1.PNG)
+![CQ2](/public/images/2tree1-mod.PNG)
 
 A is full with B and C as children, and B is full with D and E, and C is full with F and G, so all levels are full.
 Therefore, this tree is a Perfect binary tree.
