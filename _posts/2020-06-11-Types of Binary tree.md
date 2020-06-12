@@ -18,7 +18,7 @@ categories: [Data Structure]
 
 ## Types of Binary Tree
 
-### 1. Full Binary Tree
+### 1. Perfect Binary Tree
 
 1. A full binary tree is a tree full of nodes at all levels.
    - Node has 2 children.
@@ -29,7 +29,7 @@ categories: [Data Structure]
 ![CQ2](/public/images/2tree1.PNG)
 
 A is full with B and C as children, and B is full with D and E, and C is full with F and G, so all levels are full.
-Therefore, this tree is a full binary tree.
+Therefore, this tree is a Perfect binary tree.
 
 ---
 
@@ -58,3 +58,26 @@ The tree on the left is a complete binary tree because it is filled with nodes f
 
 In the tree on the left, A has B as the left child, B has D as the left child, so it is the left skewed binary tree.
 In the tree on the right, A has B as the right child, B has D as the right child, so it is the right skewed binary tree.
+
+---
+
+### 4. Full Binary Tree
+
+1. A full binary tree is a tree in which all nodes have only 0 or 2 child nodes.
+2. 2 \* height + 1 <= Number of nodes n <= 2^(height+1) -1
+
+![CQ2](/public/images/2tree4.PNG)
+
+A has two child nodes B and C, B has two child nodes D and E, and C has no child node. So, this is a full binary tree.
+
+---
+
+### 5. Balanced Binary Tree
+
+1. A balanced binary tree is a tree in which height of the left and right sub-trees of all nodes does not differ by more than 1.
+
+![CQ2](/public/images/2tree6.PNG)
+
+The trees on the left can be seen that the height of the sub-trees on the left and right are not more than 1 difference.
+
+However, the trees on the right are not balanced because the height of the sub-trees on the left and right are more than 1 difference.
