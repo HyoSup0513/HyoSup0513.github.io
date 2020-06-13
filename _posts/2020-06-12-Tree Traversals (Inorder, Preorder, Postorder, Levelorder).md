@@ -32,7 +32,7 @@ categories: [Data Structure]
 2. Traverse the left subtree
 3. Traverse the right subtree
 
-![CQ2](/public/images/3tree2.PNG)
+![CQ2](/public/images/3tree2mod.PNG)
 
 Visit node A
 
@@ -60,7 +60,7 @@ Therefore, A->B->D->E->C->F->G
 2. Visit the node
 3. Traverse the right subtree
 
-![CQ2](/public/images/3tree3.PNG)
+![CQ2](/public/images/3tree3mod.PNG)
 
 Traverse the left subtree of node A -> Move to node B -> Traverse the left subtree of node B -> Visit node D
 
@@ -88,7 +88,7 @@ Therefore, D->B->E->A->F->C->G
 2. Traverse the right subtree
 3. Visit the node
 
-![CQ2](/public/images/3tree4.PNG)
+![CQ2](/public/images/3tree4mod.PNG)
 
 Traverse the left subtree of node A -> Move to node B -> Traverse the left subtree of node B -> Visit node D
 
@@ -115,7 +115,7 @@ Therefore, D->E->B->F->G->C->A
 
 1. Traverse the nodes in order from the lower level.
 
-![CQ2](/public/images/3tree5.PNG)
+![CQ2](/public/images/3tree5mod.PNG)
 
 Visit node A at the lowest level 1
 
