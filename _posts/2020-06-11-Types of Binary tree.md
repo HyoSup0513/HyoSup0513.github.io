@@ -76,7 +76,7 @@ A has two child nodes B and C, B has two child nodes D and E, and C has no child
 
 1. A balanced binary tree is a tree in which height of the left and right sub-trees of all nodes does not differ by more than 1.
 
-![CQ2](/public/images/2tree6.PNG)
+![CQ2](/public/images/2tree7.PNG)
 
 The trees on the left can be seen that the height of the sub-trees on the left and right are not more than 1 difference.
 
