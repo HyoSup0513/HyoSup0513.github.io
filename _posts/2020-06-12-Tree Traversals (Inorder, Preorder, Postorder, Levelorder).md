@@ -20,7 +20,7 @@ categories: [Data Structure]
 - L - Traverse the left subtree
 - R - Traverse the right subtree
 
-![CQ2](/public/images/3tree1.PNG)
+![CQ2](/public/images/3tree1mod.PNG)
 
 ---
 
