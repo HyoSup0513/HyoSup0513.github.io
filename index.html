@@ -2,34 +2,14 @@
 layout: default
 title: Home
 ---
-<<<<<<< HEAD
-
-<meta
-  name="google-site-verification"
-  content="7idTwBhHyaEZJMTa82CywvNjnWYpjxBMkRwL3XSwqI4"
-/>
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-=======
 <meta name="google-site-verification" content="7idTwBhHyaEZJMTa82CywvNjnWYpjxBMkRwL3XSwqI4" />
 
-<!-- {% if site.posts.size == 0 %}
+{% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
 
 <div class="posts">
-  
+
   {% for post in site.posts %}
     {% if post.pinned==true %}
       <article class="post pinned">
@@ -38,7 +18,7 @@ title: Home
         </h1>
 
         <div clsss="meta">
-          
+
           <span class="author">
             {{ post.author }}
           </span>
@@ -70,7 +50,7 @@ title: Home
       </article>
     {% endif %}
   {% endfor %}
-  
+
   {% for post in paginator.posts %}
     {% unless post.pinned %}
     <article class="post">
@@ -79,11 +59,11 @@ title: Home
       </h1>
 
       <div clsss="meta">
-        
+
         <span class="author">
           {{ post.author }}
         </span>
-            
+
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
@@ -106,33 +86,10 @@ title: Home
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
     {% endunless %}
->>>>>>> da44a15a62e135a234c40516d6821d34c2f6937e
   {% endfor %}
 </div>
 
 <div class="pagination">
-<<<<<<< HEAD
-  {% if paginator.next_page %}
-  <a
-    class="pagination-item older"
-    href="{{ paginator.next_page_path | absolute_url }}"
-    >Older</a
-  >
-  {% else %}
-  <span class="pagination-item older">Older</span>
-  {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
-  <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-  {% else %}
-  <a
-    class="pagination-item newer"
-    href="{{ paginator.previous_page_path | absolute_url }}"
-    >Newer</a
-  >
-  {% endif %} {% else %}
-  <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-=======
   {% if paginator.previous_page %}
     <span class="prev">
       <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
@@ -147,22 +104,4 @@ title: Home
       </a>
     </span>
   {% endif %}
-</div> -->
-
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/public/images/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-  </div>
-</article>
-{% endfor %}
-
-{% include pagination.html %}
->>>>>>> da44a15a62e135a234c40516d6821d34c2f6937e
+</div>
