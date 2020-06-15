@@ -20,8 +20,7 @@
 
 title: Maratom's Study Blog
 email: ysyt2004@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-<a href="https://hyosup0513.github.io//about/"><img src="/public/Maratom.jpg" width="150" height="150">   Maratom</a> <a href="https://github.com/HyoSup0513"><img src="/public/giticon.png" width="60" height="60"> GitHub</a>
+description: <a href="https://hyosup0513.github.io//about/"><img src="/public/Maratom.jpg" width="150" height="150">   Maratom</a> <a href="https://github.com/HyoSup0513"><img src="/public/giticon.png" width="60" height="60"> GitHub</a>
 baseurl: "https://hyosup0513.github.io/"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
