@@ -94,3 +94,12 @@ Terms of node
 ![CQ2](/public/images/tree9.PNG)
 
 ---
+
+## Subtree
+
+- All nodes below a particular node form a left or right subtree.
+
+  - The subtree on the left becomes 'left subtree'
+  - The subtree on the right becomes the "right subtree"
+
+  ![CQ2](/public/images/subtree2.PNG)
