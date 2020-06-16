@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is a Heap?
+title: Heap Implementation using Array
 comments: true
 categories: [Data Structure]
 ---
