@@ -61,7 +61,7 @@ categories: [Data Structure]
 
 ![CQ2](/public/images/2heap5.PNG)
 
-![CQ2](/public/images/2heap8.PNG)
+![CQ2](/public/images/2heap9.PNG)
 
 ---
 
@@ -95,4 +95,4 @@ categories: [Data Structure]
 
 ![CQ2](/public/images/2heap7.PNG)
 
-![CQ2](/public/images/2heap9.PNG)
+![CQ2](/public/images/2heap8.PNG)
