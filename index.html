@@ -8,6 +8,8 @@ title: Home
   content="7idTwBhHyaEZJMTa82CywvNjnWYpjxBMkRwL3XSwqI4"
 />
 
+<link rel="stylesheet" href="/public/css/gradient.css">
+
 {% if sites.site.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
@@ -26,7 +28,9 @@ title: Home
             
       {% if post %} {% assign categories = post.categories %} {% else %} {% assign
       categories = page.categories %} {% endif %} {% for category in categories %}
-      <a href="{{site.baseurl}}/category/{{category|slugize}}.html"></a>{{category}}</a>
+      <span class="gradtext">
+        <a href="{{site.baseurl}}/category/{{category|slugize}}.html"></a>{{category}}</a>
+      </span>
       {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
     </div>
   
@@ -48,14 +52,16 @@ title: Home
           <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
           {% endif %}
 
+          <!-- {{ post.content | strip_html | truncatewords: 30 }} -->
+          
           <!-- {% if post.cover %}
           <div class="post-cover">
               <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
               <img src="{{ post.cover }}" alt="">
           </div>
           {% endif %} -->
-      </section>
 
+      </section>
       <footer class="post-meta">
           <div class="post-tags">
               {% if post.tags.size > 0 %}
@@ -67,10 +73,9 @@ title: Home
 
           <time class="post-date" datetime="{{ post.date | date:'%y-%m-%d' }}">{{ post.date | date_to_string }}</time>
         </footer>
-      
-
+                  <!-- 추가 -->
+                  <hr size="5" noshade>
       </a>
-      
     </li>
   {% endfor %}
 
