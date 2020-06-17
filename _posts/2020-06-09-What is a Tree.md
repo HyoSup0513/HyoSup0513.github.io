@@ -3,6 +3,7 @@ layout: post
 title: What is a Tree ?
 comments: true
 categories: [Data Structure]
+tags: [Tree]
 ---
 
 # Data Structure Tree

@@ -3,6 +3,7 @@ layout: post
 title: Heap Implementation using Array
 comments: true
 categories: [Data Structure]
+tags: [Heap]
 ---
 
 # About Implementation of heap using array

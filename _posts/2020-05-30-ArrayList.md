@@ -3,6 +3,7 @@ layout: post
 title: C Array List Implementation 배열 리스트 구현
 comments: true
 categories: [Data Structure]
+tags: [List]
 ---
 
 # Array List

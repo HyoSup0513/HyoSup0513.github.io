@@ -3,6 +3,7 @@ layout: post
 title: Types of Binary Tree
 comments: true
 categories: [Data Structure]
+tags: [Tree]
 ---
 
 # About Types of Binary Tree

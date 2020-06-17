@@ -3,6 +3,7 @@ layout: post
 title: What is a Heap?
 comments: true
 categories: [Data Structure]
+tags: [Heap]
 ---
 
 # About data structure Heap

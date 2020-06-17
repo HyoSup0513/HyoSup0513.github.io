@@ -3,6 +3,7 @@ layout: post
 title: Circular Queue 원형 큐
 comments: true
 categories: [Data Structure]
+tags: [Queue]
 ---
 
 # Array Circular Queue 배열 원형 큐
@@ -15,11 +16,13 @@ categories: [Data Structure]
   - Circular Queue is an efficient way to do this.
 
 ## ![CQ1](/public/images/CQ2.PNG)
+
 It is impossible to add a new node even if there is an empty node in Front.
 To insert a new node into the Front, the existing nodes A, B, and C must be moved from 1, 2, 3 to 0, 1, 2.
 But this process is not necessary in Circular Queue, because circular queue connect Front and Rear.
 
 ---
+
 ## Characteristic of Circular Queue
 
 - Connect the front and rear of the array.
@@ -31,6 +34,7 @@ A is removed from index 0 by Dequeue(A), and then Front is changed to B in index
 Then, Enqueue(E) inserts E into index 0 with empty node, and E becomes the new Rear.
 
 ---
+
 # Implementation
 
 [Github](https://github.com/HyoSup0513/study/blob/master/Datastructure/Queue/CircularQueue.c)

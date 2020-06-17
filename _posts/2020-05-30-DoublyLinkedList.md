@@ -3,6 +3,7 @@ layout: post
 title: Doubly Linked List Implementation 이중 연결 리스트 구현
 comments: true
 categories: [Data Structure]
+tags: [Doubly Linked List]
 ---
 
 # Doubly Linked List 이중 연결 리스트
