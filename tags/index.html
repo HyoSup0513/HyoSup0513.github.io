@@ -3,20 +3,19 @@ layout: page
 title: Tags
 permalink: /tags/
 ---
+<link rel="stylesheet" href="/public/css/gradient.css">
 
-{% if site.posts.size == 0 %}
-  <h2>No post found</h2>
-{% endif %}
 
 <div class="tags">
   <ul class="label">
     {% for tag in site.tags %}
-    <li>
+    <span style="background-color: rgb(246, 246, 246); border-radius: 5px">
       <a href="#{{ tag[0] }}">
         <span>{{ tag[0] }}</span>
-        <span class="count">{{ tag[1] | size }}</span>
-      </a>
-    </li>
+      </span>
+    </a>
+      <span style="background-color: rgb(221, 245, 253); border-radius: 5px">  
+        <span class="count">{{ tag[1] | size }}</span>       </span>   &ensp;
     {% endfor %}
   </ul>
 

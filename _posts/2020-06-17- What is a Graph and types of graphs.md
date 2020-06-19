@@ -66,6 +66,8 @@ tags: [Tree, C]
 
 ![CQ2](/public/images/graph6.PNG)
 
+---
+
 ## Types of Graphs
 
 - Undirected graph
