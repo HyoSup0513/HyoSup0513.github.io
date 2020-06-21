@@ -3,7 +3,7 @@ layout: post
 title: How to traverse Graph, DFS and BFS
 comments: true
 categories: [Data Structure]
-tags: [Tree, C]
+tags: [Graph, C]
 ---
 
 # About Data Structure Graph Traversal DFS and BFS
