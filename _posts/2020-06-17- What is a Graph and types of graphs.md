@@ -3,7 +3,7 @@ layout: post
 title: What is a Graph and types of Graphs
 comments: true
 categories: [Data Structure]
-tags: [Tree, C]
+tags: [Graph, C]
 ---
 
 # About data structure Graph and its types
