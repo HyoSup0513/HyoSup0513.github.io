@@ -3,7 +3,7 @@ layout: post
 title: How to traverse Graph, DFS and BFS
 comments: true
 categories: [Data Structure]
-tags: [Tree, C]
+tags: [Graph, C]
 ---
 
 # About Data Structure Graph Traversal DFS and BFS
@@ -58,3 +58,4 @@ tags: [Tree, C]
 - Use to search the entire graph.
 - The node you are looking for is far from the root node.
 - It is recommended to use it when there is not much differencei in depth on the graph.
+
