@@ -2,10 +2,14 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="/public/css/gradient.css" />
+
 <div class="post-categories">
   {% if post %} {% assign categories = post.categories %} {% else %} {% assign
   categories = page.categories %} {% endif %} {% for category in categories %}
-  <a href="{{site.baseurl}}/category/{{category|slugize}}.html">{{category}}</a>
+  <a href="{{site.baseurl}}/category/{{category|slugize}}.html">
+    <span class="gradtext">{{category}} </span></a
+  >
   {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
 </div>
 
