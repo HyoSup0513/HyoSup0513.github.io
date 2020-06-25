@@ -4,6 +4,7 @@ title: How to traverse Graph, DFS and BFS
 comments: true
 categories: [Data Structure]
 tags: [Graph, C]
+toc: true
 ---
 
 # About Data Structure Graph Traversal DFS and BFS

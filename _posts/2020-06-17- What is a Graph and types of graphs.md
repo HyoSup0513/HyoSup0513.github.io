@@ -4,6 +4,7 @@ title: What is a Graph and types of Graphs
 comments: true
 categories: [Data Structure]
 tags: [Graph, C]
+toc: true
 ---
 
 # About data structure Graph and its types

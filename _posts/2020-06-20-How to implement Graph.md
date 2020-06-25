@@ -4,6 +4,7 @@ title: How to implement Graph
 comments: true
 categories: [Data Structure]
 tags: [Graph, C]
+toc: true
 ---
 
 # About Data Structure Graph Implementation Method

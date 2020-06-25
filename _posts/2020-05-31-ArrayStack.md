@@ -4,6 +4,7 @@ title: Array Stack (배열 스택)
 comments: true
 categories: [Data Structure]
 tags: [Stack]
+toc: true
 ---
 
 # Array Stack 배열 스택

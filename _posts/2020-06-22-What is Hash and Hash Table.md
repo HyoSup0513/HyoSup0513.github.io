@@ -4,6 +4,7 @@ title: What is Hash and Hash Table
 comments: true
 categories: [Data Structure]
 tags: [Hash Table, C++]
+toc: true
 ---
 
 # About Data Structure Hash Table

@@ -4,6 +4,7 @@ title: What is a Heap?
 comments: true
 categories: [Data Structure]
 tags: [Heap]
+toc: true
 ---
 
 # About data structure Heap

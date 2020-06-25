@@ -4,6 +4,7 @@ title: Types of Binary Tree
 comments: true
 categories: [Data Structure]
 tags: [Tree]
+toc: true
 ---
 
 # About Types of Binary Tree

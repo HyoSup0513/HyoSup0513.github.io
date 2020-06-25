@@ -4,6 +4,7 @@ title: Tree Traversals (Inorder, Preorder, Postorder, Levelorder)
 comments: true
 categories: [Data Structure]
 tags: [Tree]
+toc: true
 ---
 
 # About Types of Tree Traversals

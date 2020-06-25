@@ -4,6 +4,7 @@ title: What is Binary Search Tree
 comments: true
 categories: [Data Structure]
 tags: [Hash Table, C++]
+toc: true
 ---
 
 # About Data Structure Binary Search Tree
@@ -61,8 +62,6 @@ If the node you want to remove does not have a child node, you can see that the 
 
 `Remove the node you want to remove` and set the connection to the parent node pointing to the removed node to `null`.
 
-</br>
-
 2. There is `one child node` of the node that you want to remove.
 
 ![CQ2](/public/images/bst5.PNG)
@@ -72,8 +71,6 @@ If the node you are trying to remove has one child node, additional processing i
 Move the `child node of the node to be removed` to the `location of the node to be removed`.
 
 The `parent node` of the node to be removed is connected with the `child node` of the node to be removed.
-
-</br>
 
 3. There is `two child nodes` of the node that you want to remove.
 

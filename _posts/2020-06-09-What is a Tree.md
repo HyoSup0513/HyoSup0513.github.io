@@ -4,6 +4,7 @@ title: What is a Tree ?
 comments: true
 categories: [Data Structure]
 tags: [Tree]
+toc: true
 ---
 
 # Data Structure Tree
