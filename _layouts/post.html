@@ -14,16 +14,14 @@ layout: default
   {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
 </div>
 
-{% raw %}
 <div class="tocside">
   <div id="table-of-contents">
     <span class="sidenav">
       <h3 class="no_toc">Contents</h3>
-      {% toc %}
+      {{ content | toc_only }}
     </span>
   </div>
 </div>
-{% endraw %}
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
