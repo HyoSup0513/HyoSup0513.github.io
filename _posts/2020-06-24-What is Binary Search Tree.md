@@ -3,7 +3,7 @@ layout: post
 title: What is Binary Search Tree
 comments: true
 categories: [Data Structure]
-tags: [Hash Table, C++]
+tags: [Binary Search Tree, C]
 ---
 
 # About Data Structure Binary Search Tree
