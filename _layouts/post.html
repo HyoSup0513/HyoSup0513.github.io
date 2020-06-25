@@ -1,6 +1,5 @@
 ---
 layout: default
-toc: true
 ---
 
 <link rel="stylesheet" href="/public/css/gradient.css" />
@@ -15,6 +14,7 @@ toc: true
   {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
 </div>
 
+{% raw %}
 <div class="tocside">
   <div id="table-of-contents">
     <span class="sidenav">
@@ -23,6 +23,7 @@ toc: true
     </span>
   </div>
 </div>
+{% endraw %}
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
