@@ -6,6 +6,11 @@ categories: [Data Structure]
 tags: [Hash Table, C++]
 toc: true
 ---
+{:.no_toc}
+## Contents
+* TOC
+{:toc}
+---
 
 # About Data Structure Binary Search Tree
 
