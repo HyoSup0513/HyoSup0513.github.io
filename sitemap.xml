@@ -1,28 +1,157 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    <url>
-      <loc>https://hyosup0513.github.io{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
 
-      {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% endif %}
+<url>
+  <loc>https://hyosup0513.github.io/</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/about.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/Category.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/archive/</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/tags/</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/category/Data%20Structure.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/27/What-is-Singly-Linked-List.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/24/What-is-Binary-Search-Tree.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/22/What-is-Hash-and-Hash-Table.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/20/How-to-traverse-Graph,-DFS-and-BFS.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/20/How-to-implement-Graph.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/page2/</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/category/Algorithms.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/category/Database.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/category/Network.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/category/OS.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/17/What-is-a-Graph-and-types-of-graphs.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/16/Heap-Implementattion-using-Array.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/14/What-is-a-Heap.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/12/Tree-Traversals-(Inorder,-Preorder,-Postorder,-Levelorder).html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/11/Types-of-Binary-tree.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/09/What-is-a-Tree.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/06/06/CircularQueue.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/05/31/ArrayStack.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/05/30/DoublyLinkedList.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/data%20structure/2020/05/30/ArrayList.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/database/2020/05/31/Hierarchical-and-Network-Database-Model.html</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/page3/</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hyosup0513.github.io/page4/</loc>
+  <lastmod>2020-06-27T11:25:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 
-    </url>
-  {% endfor %}
+
 </urlset>
