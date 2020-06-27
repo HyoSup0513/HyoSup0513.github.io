@@ -6,6 +6,11 @@ categories: [Data Structure]
 tags: [Hash Table, C++]
 toc: true
 ---
+{:.no_toc}
+## Contents
+* TOC
+{:toc}
+---
 
 # About Data Structure Hash Table
 
@@ -173,7 +178,7 @@ Therefore, it is important to create a function that reduces the probability of 
 
 ---
 
-### Resizing
+## Resizing
 
 ![CQ2](/public/images/hashtable7.PNG)
 
