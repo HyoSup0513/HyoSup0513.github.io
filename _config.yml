@@ -22,7 +22,7 @@ title: Maratom's Study Blog
 email: ysyt2004@gmail.com
 description: <a href="https://hyosup0513.github.io/about.html"><center><img src="/public/Maratom.jpg" width="150" height="150"></center><center>Maratom</center></a> <center>For the Better</center><p></p> <a href="https://github.com/HyoSup0513"><img src="/public/giticon.png" width="30" height="30" style="float:left"><a2 style="padding-left:10px";>GitHub</a2></a>
 baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://hyosup0513.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: HyoSup0513
 markdown: kramdown
@@ -35,6 +35,7 @@ theme: minima
 plugins:
   - jekyll-paginate
   - jekyll-toc
+  - jekyll-sitemap
 
 toc:
   min_level: 2 # default: 1
