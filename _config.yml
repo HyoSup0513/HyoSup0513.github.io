@@ -35,7 +35,6 @@ theme: minima
 plugins:
   - jekyll-paginate
   - jekyll-toc
-  - jekyll-sitemap
 
 toc:
   min_level: 2 # default: 1
