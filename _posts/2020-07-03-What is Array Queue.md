@@ -6,14 +6,11 @@ categories: [Data Structure]
 tags: [Array Queue, C]
 toc: true
 ---
-
 {:.no_toc}
-
 ## Contents
 
 - TOC
-  {:toc}
-
+ {:toc}
 ---
 
 ## What is Queue and How it works?
