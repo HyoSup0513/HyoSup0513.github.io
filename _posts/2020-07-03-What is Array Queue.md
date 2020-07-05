@@ -57,7 +57,7 @@ toc: true
 
 - The location index of the last stored data in the array equals the value of the `rear`.
   - Therefore, when you add a new node, the location index of the node is `rear + 1`.
-- If `rear` equals `maxCount - 1`, the queue is full.
+- If `rear` is equal to `maxCount - 1`, the queue is full.
   - `maxCount` is the maximum number of data that can be stored in an array.
 
 ```
