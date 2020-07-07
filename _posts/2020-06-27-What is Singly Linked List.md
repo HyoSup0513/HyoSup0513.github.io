@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is Linked List?
+title: What is Singly Linked List?
 comments: true
 categories: [Data Structure]
 tags: [Linked List, C]
@@ -57,12 +57,51 @@ toc: true
 
 ![CQ2](/public/images/SL5.PNG)
 
+```
+// Make new node and prev node.
+// Set the value of the node to insert
+pNewNode->data = data;
+
+// "pPrevNode" refers to the previous node in the position to be inserted.
+pPrevNode = &(llist->headerNode);
+for (i = 0; i < position; i++)
+{
+    pPrevNode = pPrevNode->link;
+}
+
+// Connect the "pNewNode" to the next node of "pPrevNode".
+pNewNode->link = pPrevNode->link;
+// Next node of "pPrevNode" becomes the "pNewNode".
+pPrevNode->link = pNewNode;
+// Increases the current number of nodes.
+llist->currentCount++;
+```
+
 ### Deletion
 
 1. Link the previous node of the node to be removed to the next node of the node to be removed.
 2. Free the memory of the node to be removed.
 
 ![CQ2](/public/images/SL6.PNG)
+
+```
+// Make del node and prev node.
+// "pPrevNode" refers to the previous node in the position to be deleted.
+pPrevNode = &(llist->headerNode);
+for (i = 0; i < position; i++)
+{
+    pPrevNode = pPrevNode->link;
+}
+
+// Specify the node to delete.
+pDelNode = pPrevNode->link;
+// The next node of "pPrevNode" becomes the next node of "pDelNode".
+pPrevNode->link = pDelNode->link
+// Remove pDelNode
+free(pDelNode);
+// Decrease the current number of nodes.
+llist->currentCount--;
+```
 
 ### Concatenating two Linked List
 
@@ -72,6 +111,23 @@ toc: true
 
 ![CQ2](/public/images/SL7.PNG)
 
+```
+// Concatenate "pListA" and "pListB".
+
+// "pNodeA" becomes the last node of "pListA".
+pNodeA = pListA->headerNode.link;
+while (pNodeA != NULL && pNodeA->link != NULL)
+{
+  pNodeA = pNodeA->link;
+}
+
+// Set the next node of "pNodeA" as the first node of "pListB".
+pNodeA->link = pListB->headerNode.link;
+
+// pListB becomes an empty list.
+pListB->headerNode.link = NULL;
+```
+
 ### Implementation
 
-[GitHub](https://github.com/HyoSup0513/study/blob/master/Datastructure/List/Linked%20List.c)
+[GitHub](https://github.com/HyoSup0513/study/blob/master/Datastructure/List/Linked%20List/Singly%20Linked%20List/Linked%20List.c)
