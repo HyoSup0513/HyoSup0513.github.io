@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post2
 title: Difference between Process and Thread
 comments: true
 categories: [OS]

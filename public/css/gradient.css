@@ -9,3 +9,14 @@
     color: transparent;
     font-weight: bold;
 }
+.gradtextOS {
+    background: #bf8efc;
+    background: -webkit-linear-gradient(left, #b038fc, #818aff);
+    background:    -moz-linear-gradient(right, #b038fc, #818aff);
+    background:      -o-linear-gradient(right, #b038fc, #818aff);
+    background:         linear-gradient(to right, #b038fc, #818aff);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
