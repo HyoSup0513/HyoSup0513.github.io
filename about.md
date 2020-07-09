@@ -2,24 +2,32 @@
 layout: page
 title: About
 ---
-## 공부 블로그 Study Blog
+
+## Study Blog
+
+> This is a blog to organize and remind me of what I have studied.
 
 ## Current State
-* I'm majoring in computer science at California University. 
-* 현재 컴퓨터 공학과에 재학중입니다.
+
+- I'm majoring in computer science at California University.
 
 ## Author
-* Name: HyoSup Cho
-* Nickname: Maratom
-* Major: Computer Science
-* Email: ysyt2004@gmail.com
+
+- Name: HyoSup Cho
+- Nickname: Maratom
+- Major: Computer Science (Senior)
+- Email: ysyt2004@gmail.com
 
 ## Programming Languages that I've used
-* C,C++
-* Python
-* Java
-* Javascript
+
+- C,C++
+- Python
+- Java
+- Javascript
 
 ## ETC
-* Game Programming
-  * Unity c#
+
+- React
+- Node.js
+- MongoDB
+- Git

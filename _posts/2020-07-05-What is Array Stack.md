@@ -61,7 +61,7 @@ toc: true
 - After inserting the data, increase the number of nodes by 1.
   - currentCount++;
 
-```
+```c
 // Insert new data into the top.
 pStack->pData[pStack->currentCount].data = data;
 // Increase the variable currentCount indicating the current number of nodes.
@@ -77,7 +77,7 @@ pStack->currentCount++;
 - After removing the node in the `top`, reduce the number of nodes by 1.
   - currentCount--;
 
-```
+```c
 // Set the node to return.
 pReturn->pData = pStack->pData[pStack->currentCount - 1]
 // Decrease the variable currentCount indicating the current number of nodes.
@@ -92,7 +92,7 @@ pStack->currentCount--;
 - Returns the node located in the Top.
   - Top = curretCount-1.
 
-```
+```c
 pReturn = &(pStack->pData[queue->currentCount - 1]);
 ```
 

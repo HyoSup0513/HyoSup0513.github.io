@@ -57,7 +57,7 @@ toc: true
 
 ![CQ2](/public/images/SL5.PNG)
 
-```
+```c
 // Make new node and prev node.
 // Set the value of the node to insert
 pNewNode->data = data;
@@ -84,7 +84,7 @@ llist->currentCount++;
 
 ![CQ2](/public/images/SL6.PNG)
 
-```
+```c
 // Make del node and prev node.
 // "pPrevNode" refers to the previous node in the position to be deleted.
 pPrevNode = &(llist->headerNode);
@@ -111,7 +111,7 @@ llist->currentCount--;
 
 ![CQ2](/public/images/SL7.PNG)
 
-```
+```c
 // Concatenate "pListA" and "pListB".
 
 // "pNodeA" becomes the last node of "pListA".

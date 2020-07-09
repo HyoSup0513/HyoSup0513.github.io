@@ -60,7 +60,7 @@ toc: true
 - If `rear` is equal to `maxCount - 1`, the queue is full.
   - `maxCount` is the maximum number of data that can be stored in an array.
 
-```
+```c
 // Change the position of rear.
 queue->rear++;
 // Add new Data in the array.
@@ -79,7 +79,7 @@ queue->currentCount++;
   - This is because the front was initially declared -1.
   - Also, this is important in the peek operation.
 
-```
+```c
 // Change the position of front.
 pReturn->front++;
 // Store the data of node to be removed.
@@ -97,7 +97,7 @@ queue->currentCount--;
 - Peek only returns the node in the front without removing it.
 - Because the front was initially declared -1, the `front + 1` location index must be used to return the data of the actual front node.
 
-```
+```c
 pReturn = &(queue->pData[queue->front + 1]);
 ```
 
