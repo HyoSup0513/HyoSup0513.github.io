@@ -1,3 +1,14 @@
+.gradtextMain {
+    background: #55ffaa;
+    background: -webkit-linear-gradient(left, #b62e64, #881d73);
+    background:    -moz-linear-gradient(right, #b62e64, #881d73);
+    background:      -o-linear-gradient(right, #b62e64, #881d73);
+    background:         linear-gradient(to right, #b62e64, #881d73);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
 .gradtext {
     background: #55ffaa;
     background: -webkit-linear-gradient(left, #55ff55, #55ffff);
@@ -15,6 +26,17 @@
     background:    -moz-linear-gradient(right, #b038fc, #818aff);
     background:      -o-linear-gradient(right, #b038fc, #818aff);
     background:         linear-gradient(to right, #b038fc, #818aff);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.gradtextDP {
+    background: #ff8300;
+    background: -webkit-linear-gradient(left, #ff8300, #ff737b);
+    background:    -moz-linear-gradient(right, #ff8300, #ff737b);
+    background:      -o-linear-gradient(right, #ff8300, #ff737b);
+    background:         linear-gradient(to right, #ff8300, #ff737b);
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;

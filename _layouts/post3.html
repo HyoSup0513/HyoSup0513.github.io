@@ -11,7 +11,7 @@ comments: true
   {% if post %} {% assign categories = post.categories %} {% else %} {% assign
   categories = page.categories %} {% endif %} {% for category in categories %}
   <a href="{{site.baseurl}}/category/{{category|slugize}}.html">
-    <span class="gradtext">{{category}} </span></a
+    <span class="gradtextDP">{{category}} </span></a
   >
   {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
 </div>
@@ -30,8 +30,9 @@ comments: true
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   <img src="../../../../public/tag-2.png" width="4%" height="4%" align="left">
-  {% include post_tags.html %}{{ content }}
+  {% include post_tags.html %} {{ content }}
 </div>
+
 {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Related posts</h2>

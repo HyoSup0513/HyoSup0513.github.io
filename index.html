@@ -28,7 +28,7 @@ title: Home
             
       {% if post %} {% assign categories = post.categories %} {% else %} {% assign
       categories = page.categories %} {% endif %} {% for category in categories %}
-      <span class="gradtext">
+      <span class="gradtextMain">
         <a href="{{site.baseurl}}/category/{{category|slugize}}.html"></a>{{category}}</a>
       </span>
       {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
@@ -40,11 +40,11 @@ title: Home
       {% else %}
       <a href="{{ site.baseurl }}{{ post.url }}">
       {% endif %}
-        {{ post.title }}
+        <div style = "font-size:1.5em";>{{ post.title }}</div>
       
         <section class="post-preview">
           <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
-          <h2 class="post-title">{{ post.title }}</h2>
+          <!-- <h2 class="post-title">{{ post.title }}</h2> -->
           {% if post.subtitle %}
           <h3 class="post-subtitle">{{ post.subtitle }}</h3>
           {% endif %}
@@ -65,25 +65,25 @@ title: Home
       </section>
       <footer class="post-meta">
           <div class="post-tags">
+            <img src="./public/tag-2.png" width="4%" height="4%" align="left">
               {% if post.tags.size > 0 %}
                   {% for tag in post.tags  %}
                   <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-                    <span style="background-color: #d8f6fd; border-radius: 10px">
-                      <span style="font-size:20px">{{ tag }}</span></span>
+                    <span style="background-color: #cccccc; border-radius: 5px">
+                      <span style="font-size:20px"> {{ tag }} </span></span>&nbsp;
                   </a>
                   {% endfor %}
               {% endif %}
+              <time align="right" class="post-date" datetime="{{ post.date | date:'%y-%m-%d' }}">{{ post.date | date_to_string }}</time>
           </div>
-
-          <time class="post-date" datetime="{{ post.date | date:'%y-%m-%d' }}">{{ post.date | date_to_string }}</time>
         </footer>
                   <!-- 추가 -->
                   <hr size="5" noshade>
       </a>
     </li>
   {% endfor %}
-
 </ul>
+
 
 <div class="pagination">
   {% if paginator.next_page %}
