@@ -15,6 +15,10 @@ toc: true
 
 ## What is Singleton Pattern?
 
+> A singleton pattern is a pattern that allows a generated object to be referenced anywhere by creating only one object without using a global variable.
+
+![CQ2](/public/images/Singleton01.PNG)
+
 Singleton Pattern is a design pattern in which one class allocates memory `only once` using `static` when an application starts, and creates `one instance` within that memory.
 
 Even if a constructor is called several times, there is `only one object` that is actually created and the constructor that is called after the initial creation returns the object that was originally created. Use the `existing instance` instead of `creating the same instance` when it is needed.
@@ -35,9 +39,11 @@ If a singleton instance does too much work or shares too much data, the degree o
 
 In addition, two instances can be created without synchronization in a multi-threaded environment.
 
-## Thread-Safe Singleton Class and Instance
+---
 
-1. Eager Initialization (Not Thread-Safe)
+## Thread-Safe Singleton Pattern
+
+### 1. Eager Initialization (Not Thread-Safe)
 
 - Using the characteristics of the `static` keyword, the instance is registered and used in memory through static binding at the point when the class loader initializes.
 - This is `not Thread-Safe`.
@@ -55,7 +61,9 @@ public class Singleton {
 }
 ```
 
-2. Lazy initialization (Thread-Safe)
+---
+
+### 2. Lazy initialization (Thread-Safe)
 
 - Create an instance variable with `private static`.
 - The private constructor prevents the external creation of the instance.
@@ -64,35 +72,24 @@ public class Singleton {
 However, this method is not recommended because `synchronized` cause relatively large performance degradation. Because whether an instance is created or not, it's bound to go through a sync block.
 
 ```java
-public class Speaker {
-    private static Speaker instance;
-    private int volume;
+public class SystemComponent1 {
+    private static SystemComponent1 instance;
 
-    private Speaker() {
-        volume = 5;
+    private SystemComponent1() {
     }
 
-    public static synchronized Speaker getInstance() {
+    public static SystemComponent1 getInstance() {
         if (instance == null) {
-            instance = new Speaker();
-            System.out.println("Create New One");
-        } else {
-            System.out.println("Already Created");
+            instance = new SystemComponent1();
         }
         return instance;
-    }
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
     }
 }
 ```
 
-3. Lazy initialization and Double-checked locking (Thread-Safe)
+---
+
+### 3. Lazy initialization and Double-checked locking (Thread-Safe)
 
 - Instead of using `synchronized` for `getInstance()`, it checks the existence of the instance with the first if statement .
 - Synchronization blocks are executed only if no instance has been created.
@@ -100,38 +97,26 @@ public class Speaker {
 - By using "volatile", it ensures that the variable "Instance" is initialized to the Singleton instance correctly, even if you use multi-threading.
 
 ```java
-public class Speaker2 {
-    private volatile static Speaker2 instance;
-    private int volume;
+public class SystemComponent2 {
+    private volatile static SystemComponent2 instance;
 
-    private Speaker2() {
-        volume = 5;
+    private SystemComponent2() {
     }
 
-    public static Speaker2 getInstance() {
+    public static SystemComponent2 getInstance() {
         if (instance == null) {
-            synchronized (Speaker2.class) {
-                instance = new Speaker2();
-                if (instance == null)
-                    System.out.println("Create New One");
+            synchronized (SystemComponent2.class) {
+                instance = new SystemComponent2();
             }
-        } else {
-            System.out.println("Already Created");
         }
         return instance;
-    }
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
     }
 }
 ```
 
-4. Initialization on demand holder idiom
+---
+
+### 4. Initialization on demand holder idiom
 
 - Uses the characteristics of `dynamic binding`.
 - It does not initialize the `Holder` method, it is initialized when calling the `getInstance()` method.
@@ -139,17 +124,22 @@ public class Speaker2 {
 - Performance is superior because concurrency issues are solved without volatile or synchronized keywords.
 - This is the most popular way of Singleton implementation.
 
+Let's think of the component as a speaker and adjust the volume. Set the default volume to 5.
+
 ```java
-public class Speaker3 {
-    private Speaker3() {
-      volume = 5;
+// Initialization on demand holder idiom
+public class SystemComponent3 {
+    private int volume;
+
+    private SystemComponent3() {
+        volume = 5;
     }
 
     private static class Holder {
-        public static final Speaker3 INSTANCE = new Speaker3();
+        public static final SystemComponent3 INSTANCE = new SystemComponent3();
     }
 
-    public static Speaker3 getInstance() {
+    public static SystemComponent3 getInstance() {
         return Holder.INSTANCE;
     }
 
@@ -162,3 +152,39 @@ public class Speaker3 {
     }
 }
 ```
+
+Let's test the pattern using the last method.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Use Initialization on demand holder idiom
+        SystemComponent3 speaker1 = SystemComponent3.getInstance();
+        SystemComponent3 speaker2 = SystemComponent3.getInstance();
+
+        System.out.println("Volumn of Speaker1 = " + speaker1.getVolume());
+        System.out.println("Volumn of Speaker2 = " + speaker2.getVolume());
+        System.out.println();
+
+        System.out.println("Change the Volumn of Speaker2 to 10.");
+        // Set Volumn to 10
+        speaker2.setVolume(10);
+
+        System.out.println("Volumn of Speaker1 = " + speaker1.getVolume());
+        System.out.println("Volumn of Speaker2 = " + speaker2.getVolume());
+    }
+}
+```
+
+```
+// OUTPUT
+Volumn of Speaker1 = 5
+Volumn of Speaker2 = 5
+
+Change the Volumn of Speaker2 to 10.
+Volumn of Speak1 = 10
+Volumn of Speak2 = 10
+```
+
+Here we have two instances `speaker1` and `speaker2`. Next, check the volume of the speaker and it's all the default.
+Then, I changed the volume of speaker2 to 10. Then I checked the volume and it's all 10.

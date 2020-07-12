@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Circular Queue 원형 큐
+title: What is Circular Queue
 comments: true
 categories: [Data Structure]
 tags: [Queue]
 toc: true
 ---
-
-# Array Circular Queue 배열 원형 큐
 
 ## Why use Circular Queue?
 

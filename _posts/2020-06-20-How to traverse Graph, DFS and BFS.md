@@ -60,8 +60,6 @@ toc: true
 - The node you are looking for is far from the root node.
 - It is recommended to use it when there is not much differencei in depth on the graph.
 
-#
-
 #### Implementation
 
 DFS and BFS [GitHub](https://github.com/HyoSup0513/study/blob/master/Datastructure/Graph/Graph%20Traversal/GraphTraversal.c)
