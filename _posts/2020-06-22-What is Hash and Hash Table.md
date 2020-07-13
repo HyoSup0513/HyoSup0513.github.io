@@ -188,7 +188,6 @@ Therefore, it is important to create a function that reduces the probability of 
   - In Separate Chaining, increase the number of buckets.
   - In Open Addressing, increase the size of fixed-size arrays.
 
-#
 
 #### Implementation
 
