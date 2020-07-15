@@ -6,6 +6,12 @@ categories: [Data Structure]
 tags: [Tree]
 toc: true
 ---
+{:.no_toc}
+## Contents
+
+- TOC
+ {:toc}
+---
 
 # About Types of Tree Traversals
 

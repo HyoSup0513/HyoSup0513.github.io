@@ -16,16 +16,6 @@ comments: true
   {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
 </div>
 
-<!-- error -->
-<!-- <div class="tocside">
-  <div id="table-of-contents">
-    <span class="sidenav">
-      <h3 class="no_toc">Contents</h3>
-      {{ content | toc_only }}
-    </span>
-  </div>
-</div> -->
-
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
@@ -33,23 +23,24 @@ comments: true
   {% include post_tags.html %} {{ content }}
 </div>
 
-{% if site.related_posts.size >= 1 %}
-<div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
+{% capture pageCategory %}{{ page.categories }}{% endcapture %}
+<div class="row related-posts">
+  <h2 class="text-center">More {{ page.categories }} Posts!</h2>
+  <div class="medium-12 small-12 columns">
+    {% for post in site.categories[pageCategory] limit:6 %}
+      {% unless post.title == page.title %}
+
+       <h3>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
         </a>
-      </h3>
-    </li>
+        <small>{{ post.date | date_to_string }}</small>
+       </h3>
+
+      {% endunless %}
     {% endfor %}
-  </ul>
+  </div>
 </div>
-{% endif %}
 
 <div id="disqus_thread"></div>
 <script>

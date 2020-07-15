@@ -6,6 +6,12 @@ categories: [Data Structure]
 tags: [Heap]
 toc: true
 ---
+{:.no_toc}
+## Contents
+
+- TOC
+ {:toc}
+---
 
 # About Implementation of heap using array
 
@@ -98,3 +104,9 @@ toc: true
 ![CQ2](/public/images/2heap7.PNG)
 
 ![CQ2](/public/images/2heap8.PNG)
+
+---
+
+## Implementation
+
+[Github](https://github.com/HyoSup0513/study/tree/master/Datastructure/Heap)

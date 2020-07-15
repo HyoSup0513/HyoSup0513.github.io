@@ -6,6 +6,12 @@ categories: [Data Structure]
 tags: [Graph, C]
 toc: true
 ---
+{:.no_toc}
+## Contents
+
+- TOC
+ {:toc}
+---
 
 # About data structure Graph and its types
 

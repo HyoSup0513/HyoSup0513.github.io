@@ -81,10 +81,12 @@ queue->currentCount++;
 
 ```c
 // Change the position of front.
-pReturn->front++;
+queue->front++;
+
 // Store the data of node to be removed.
 pReturn->data = queue->pData[queue->front].data;
-// Increase current number of data.
+
+// Decrease current number of data.
 queue->currentCount--;
 ```
 

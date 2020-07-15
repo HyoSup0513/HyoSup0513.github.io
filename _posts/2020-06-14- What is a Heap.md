@@ -6,6 +6,12 @@ categories: [Data Structure]
 tags: [Heap]
 toc: true
 ---
+{:.no_toc}
+## Contents
+
+- TOC
+ {:toc}
+---
 
 # About data structure Heap
 

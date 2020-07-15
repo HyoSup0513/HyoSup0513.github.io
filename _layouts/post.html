@@ -32,7 +32,9 @@ comments: true
   <img src="../../../../public/tag-2.png" width="4%" height="4%" align="left">
   {% include post_tags.html %}{{ content }}
 </div>
-{% if site.related_posts.size >= 1 %}
+
+
+<!-- {% if site.related_posts.size >= 1 %}
 <div class="related">
   <h2>Related posts</h2>
   <ul class="related-posts">
@@ -48,8 +50,28 @@ comments: true
     {% endfor %}
   </ul>
 </div>
-{% endif %}
+{% endif %} -->
 
+  {% capture pageCategory %}{{ page.categories }}{% endcapture %}
+  <div class="row related-posts">
+    <h2 class="text-center">More {{ page.categories }} Posts!</h2>
+    <div class="medium-12 small-12 columns">
+      {% for post in site.categories[pageCategory] limit:6 %}
+        {% unless post.title == page.title %}
+
+         <h3>
+          <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+          <small>{{ post.date | date_to_string }}</small>
+         </h3>
+
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+  
 <div id="disqus_thread"></div>
 <script>
 

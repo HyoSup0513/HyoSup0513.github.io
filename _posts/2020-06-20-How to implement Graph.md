@@ -6,6 +6,12 @@ categories: [Data Structure]
 tags: [Graph, C]
 toc: true
 ---
+{:.no_toc}
+## Contents
+
+- TOC
+ {:toc}
+---
 
 # About Data Structure Graph Implementation Method
 
@@ -35,12 +41,12 @@ If a graph is `Directed Graph`, `u->v` and `v->u` are different edges.
 
 ![CQ2](/public/images/2graph2.PNG)
 
-### Advantage of Adjacent Matrix
+#### Advantage of Adjacent Matrix
 
 - It is fast to check the edge information of two nodes. O(1)
 - It is fast to add and remove new edges. O(1)
 
-### Problems with Adjacent Matrix
+#### Problems with Adjacent Matrix
 
 1. Regardless of the number of edges, the size of the array is always N\*N (N is the number of nodes).
    - Because the above graph has four nodes, the number of elemnts in the array (4\*4) = 24.
@@ -49,7 +55,7 @@ If a graph is `Directed Graph`, `u->v` and `v->u` are different edges.
 3. O(N^2) to add or remove nodes.
 4. O(N^2) to find the number of all edges in the graph.
 
-#### Adjacent matrix is better used when `the number of nodes is relatively small` and `the number of edges is high`. Therefore, it is suitable for `Dense Graph`, which has many edges.
+##### Adjacent matrix is better used when `the number of nodes is relatively small` and `the number of edges is high`. Therefore, it is suitable for `Dense Graph`, which has many edges.
 
 ### 2. Adjancency List
 
@@ -62,7 +68,7 @@ If a graph is `Directed Graph`, `u->v` and `v->u` are different edges.
 
 ![CQ2](/public/images/2graph4.PNG)
 
-### Advantage of Adjacent List
+#### Advantage of Adjacent List
 
 1. Memory efficiency is good.
 2. Memory usage depends on the number of edges, not the number of nodes.
@@ -71,14 +77,14 @@ If a graph is `Directed Graph`, `u->v` and `v->u` are different edges.
 5. It is fast to add edges. O(1)
 6. O(N+E) to find the number of all edges in the graph.
 
-### Problems with Adjacent Matrix
+#### Problems with Adjacent Matrix
 
 1. It takes a long time to check the edge information of the two nodes.
 
 #### Adjacent list is better used when `the number of nodes is large` and `the number of edges is relatively small`. Therefore, it is suitable for `Sparse graph`, which has less edges.
 
-#
+---
 
-#### Implementation
+## Implementation
 
 Adjacency List and Adjacency Matrix [GitHub](https://github.com/HyoSup0513/study/tree/master/Datastructure/Graph)

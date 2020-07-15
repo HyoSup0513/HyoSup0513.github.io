@@ -6,6 +6,12 @@ categories: [Database]
 tags: [Hierarchical model, Network model]
 toc: true
 ---
+{:.no_toc}
+## Contents
+
+- TOC
+ {:toc}
+---
 
 # Hierarchical DB Model
 

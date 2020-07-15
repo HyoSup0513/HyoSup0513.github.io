@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 title: How To Handle Deadlock?
 comments: true
 categories: [OS]
