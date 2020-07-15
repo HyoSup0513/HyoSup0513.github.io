@@ -218,6 +218,8 @@ public class RadeonKidPC extends PC {
 
 Finally, let's make a main class and order a PC we want.
 
+Let's buy a gaming PC at GeForcestore, and a kid PC at Radeonstore.
+
 ```java
 import java.util.Arrays;
 
@@ -236,7 +238,7 @@ public class PCshopTest {
 }
 ```
 
-Let's buy a gaming PC at GeForcestore, and a kid PC at Radeonstore.
+---
 
 ```
 // Output
@@ -251,13 +253,16 @@ The computer you bought at the Radeon store --> [Radeon Kid PC, AMD Opteron 6276
 
 ---
 
-### Product Class
+### UML diagram
+
+#### Product Class
 
 ![CQ2](/public/images/FactoryMethod03.PNG)
 
-### Creator Class
+#### Creator Class
 
 ![CQ2](/public/images/FactoryMethod02.PNG)
 
 ## Implementation
+
 [GitHub](https://github.com/HyoSup0513/study/tree/master/Design%20Pattern/Factory%20Method%20Pattern)
