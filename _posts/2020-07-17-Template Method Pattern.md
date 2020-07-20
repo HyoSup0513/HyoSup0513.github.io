@@ -17,7 +17,7 @@ toc: true
 
 > Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithms structure. – GoF Design Patterns
 
-![CQ2](/public/images/TM1.PNG)
+![CQ2](/public/images/TM2.PNG)
 
 - `AbstractClass` : A class that defines a template method. AbstractClass defines a common algorithm of subclasses and the functions that will be implemented in a subclass as primitive methods or hook methods.
 - `ConcreteClass` : A class that implement inherited primitive or hook methods. ConcreteClass overrides the primitive or hook methods to suit the subclass.
