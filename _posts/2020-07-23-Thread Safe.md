@@ -51,6 +51,11 @@ Use `Mutex` for Thread and `Semaphore` for Process.
 ### 1. Synchronization with Mutex(Mutual exclusion)
 
 Running Time of threads with `Critical Section` is executed separately so that they do not overlap each other.
+
+#### Critical Section
+
+A `Critical Section` is a code segment that accesses shared variables and has to be executed as an atomic action. So, only one process must be executing its critical section in a group of cooperating processes.
+
 `Locking` and `unlocking` are used to coordinate access to shared resources of multiple processes. In other words, the Mutex object cannot be used simultaneously by two threads.
 
 For example, if there is only one bathroom in the house and someone else is already inside, you have to wait until the person comes out.
