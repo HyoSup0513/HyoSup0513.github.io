@@ -216,4 +216,4 @@ public class Client {
 
 ## Implementation
 
-[Github](https://github.com/HyoSup0513/study/tree/master/Design%20Pattern/Strategy%20Pattern)
+[Github](https://github.com/HyoSup0513/study/tree/master/Design%20Pattern/Adapter%20Pattern)
